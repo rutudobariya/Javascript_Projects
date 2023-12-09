@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cart-info{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    padding: 0 40px;
+}
+.item-image{
+    width: 200px;
+}
+.main-heading{
+    text-align: center;
+    margin: 20px 0;
+    color: darkblue;
+}
+.heading{
+    padding: 30px 0;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.column{
+    text-align: center;
+}
+
+.item-name{
+    padding: 20px 0 0 0 ;
+}
+.item-plus-minus-btn{
+    background-color: darkblue;
+    border: none;
+    width: 40px;
+    height: 35px;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#item-count{
+    width: 29%;
+    height: 35px;
+    text-align: center;
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.quantity-btn{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.remove-btn{
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+    background-color: #FFF;
+    border: solid black 1px;
+}
+#size-select{
+    padding: 7px;
+}
+#price{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.bill-box{
+    display: flex;
+    padding: 20px 30px;
+    border: solid grey 1px;
+}
+.bill{
+    justify-content: space-around;
+    display: flex;
+    font-size: 1.2rem;
+    padding:  0 0 50px 0;
+}
+.bill-box-price{
+    padding: 0 5px 0 15px;
+    font-weight: bolder;
+}
+
+.notice{
+    color: rgb(88, 86, 86);
+}
+.discount{
+ padding: 30px 77px;
+
+}
+#discount{
+    margin: 10px 0;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: darkblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#buy-btn{
+    padding: 15px 50px;
+    color: #fff;
+    background-color: darkblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.grid{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    padding: 0 30px;
+}
+
+@media (max-width:750px){
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+    .cart-info{
+        padding: 0 10px;
+    }
+    .buy{
+        text-align: center;
+    }
+    .discount{
+        text-align: center;
+    }
+    .bill{
+        align-items: center;
+    }
+}
+@media (max-width:590px){
+    .bill{
+        display: grid;
+        gap: 20px;
+    }
+    .grid{
+        padding: 0 20px;
+        width: 100%;
+    }
+    .cart-info {
+        margin: 0 0 15px 0 ;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width:450px){
+    .item-image {
+        width: 40vw;
+    }
+    .heading{
+        font-size: 5.5vw;
+    }
+    .main-heading-title{
+        font-size: 10vw;
+    }
+    .discount {
+        padding: 10px 0px;
+    }
+}

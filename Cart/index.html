@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatin Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="cart.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="main-heading">
+                <h1 class="main-heading-title">My Shopping Cart</h1>
+            </div>
+            <div class="cart-info">
+                <div class="column">
+                    <div class="heading">
+                        <span>Description</span>
+                    </div>
+                    <div class="image">
+                        <img src="gucci.jpg" alt="GUCCI-TSHIRT" class="item-image">
+                    </div>
+                    <div class="item-name">
+                        <span class="item-name">GUCCI T-Shirt</span>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="column">
+                        <div class="heading">
+                            <span>Size</span>
+                        </div>
+                        <div class="size-option">
+                            <select name="" id="size-select">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="heading">
+                            <span>Quantity</span>
+                        </div>
+                        <div class="quantity-btn">
+                            <button class="item-plus-minus-btn" id="minus" onclick="decreaseQuantity()">-</button>
+                            <span id="item-count"></span>
+                            <button class="item-plus-minus-btn" id="plus" onclick="increaseQuantity()">+</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="heading">
+                            <span>Price</span>
+                        </div>
+                        <div class="price-amount">
+                            <span id="price">5000 Rs.</span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="heading">
+                            <span>Remove</span>
+                        </div>
+                        <div class="remove-btn-class">
+                            <button class="remove-btn">X</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="discount">
+            <div class="discount-req">
+                <span class="notice">Buy 10 Items to Get Discount of 10% </span>
+            </div>
+            <div class="discount-btn">
+                <button id="discount" onclick="disc()">Get Discount</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bill">
+            <div class="bill-box">
+                <span>Discount :</span>
+                <span> <span class="bill-box-price" id="discount-price">0</span>Rs.</span>
+            </div>
+
+            <div class="bill-box">
+                <span>Total :</span>
+                <span> <span class="bill-box-price" id="total-price">5000</span>Rs.</span>
+            </div>
+            <div class="buy">
+                <button id="buy-btn">BUY</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

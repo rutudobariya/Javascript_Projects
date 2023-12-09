@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="form">
+        <div class="container">
+            <div class="select">
+                <span>Select User </span>
+                <select id="select-user">
+                    <option value="Admin" class="options">Admin</option>
+                    <option value="Manager" class="options">Manager</option>
+                    <option value="Faculty" class="options">Faculty</option>
+                </select>
+            </div>
+
+            <div class="login">
+                <div class="input">
+                    <input type="email" placeholder="Enter Your Email" id="email" autocomplete="off">
+                    <input type="password" placeholder="Enter Password" id="pswd" autocomplete="off">
+                </div>
+                <div class="btn">
+                    <button id="sbmt_btn" onclick="add()">Login</button>
+                </div>
+                <p id="error"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
